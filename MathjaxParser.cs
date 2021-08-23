@@ -17,7 +17,10 @@ namespace MathTex.Parser {
         // tex: { packages: {'[+]': ['unicode']} },
         private static string _InitSettings = @"MathJax = {
     startup: { typeset: false },
-    tex: { packages: { '[-]': ['noerrors'] } }
+    tex: { packages: { 
+        '[-]': ['noerrors'],
+        '[+]': ['physics'] 
+    } }
 };";
 
         private static string _ConvertFunction = @"
